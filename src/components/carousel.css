@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+
+
+}
+
+
+
+.tittleText {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.redText {
+    color: yellow;
+    margin-right: .5rem;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin-top: 3rem;
+    padding: 1rem 12.5rem;
+}
+
+.carouselTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 18px;
+    color: white;
+
+}
+
+.suppText {
+    margin-left: 20px;
+    margin-bottom: 5rem;
+    color: gray;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.hr {
+    margin: 40px 0 40px 0;
+    padding: 0 20px 0 20px;
+}
+
+.techText {
+    padding: 0 20px 0 20px;
+}
+
+
+.carousel-item-text {
+    font-size: 1.15rem;
+    margin: 40px 0 40px 0;
+    padding: 0 20px 0 20px;
+    white-space: normal;
+    color: white;
+}
+
+
+
+.techLogo1 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin-right: .5rem;
+}
+
+
+
+.carousel-img {
+    width: 90vh;
+    height: 45vh;
+}
+
+
+.carousel-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-arrow {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+    font-size: 4vw;
+    padding: 1rem;
+
+}
+
+.button-arrow:hover {
+    color: yellow;
+
+}
+
+
+.indicators {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.indicator-buttons {
+    border: none;
+    cursor: pointer;
+}
+
+.indicators>button {
+    margin: 5px;
+    background: none;
+}
+
+.indicator-symbol {
+    color: gray;
+}
+
+.indicator-symbol-active {
+    color: yellow;
+}
+
+
+
+@media only screen and (min-width: 2560px) {
+    .carousel {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding-top: 5rem;
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        width: 100vw;
+    }
+
+    .tittleText {
+        font-size: 3rem;
+        font-weight: 600;
+        padding-top: 1rem;
+        margin-bottom: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 1281px) {
+    .carousel {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(50vh - 1rem);
+        margin: 2rem auto;
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        width: 100vw;
+    }
+
+    .tittleText {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-img {
+        width: 40vw;
+        height: 25vw;
+    }
+}
+
+
+@media only screen and (max-width: 1035px) {
+    .carousel {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        margin: .5rem auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        width: 100w;
+    }
+
+    .tittleText {
+        font-size: 9vw;
+        font-weight: 600;
+        padding-top: 1rem;
+        margin-bottom: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .carousel {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        margin: .5rem auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        width: 100w;
+    }
+
+    .carousel-item {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 3rem;
+        padding: 1rem 2rem;
+    }
+
+    .tittleText {
+        font-size: 8vw;
+        font-weight: 600;
+        padding-top: 1rem;
+        margin-bottom: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .carousel-img {
+        width: 85vw;
+        height: 43vw;
+    }
+
+
+    .carouselTitle {
+        font-size: 6vw;
+        font-weight: 600;
+
+        color: white;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+    .suppText {
+        margin-left: 20px;
+        margin-bottom: 2rem;
+        color: gray;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .hr {
+        margin: 40px 0 40px 0;
+        padding: 0 20px 0 20px;
+    }
+
+
+}

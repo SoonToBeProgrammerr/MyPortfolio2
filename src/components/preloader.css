@@ -1,0 +1,38 @@
+.loaderImg {
+    max-width: 100%;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 56;
+    margin: auto;
+    padding: auto;
+
+}
+
+.preloader {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    opacity: 1;
+    transition: opacity 3s ease;
+}
+
+.preloader:hover {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 421px) {
+    .loaderImg {
+        max-width: 100%;
+        width: 90%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 56;
+        margin: auto;
+        padding: auto;
+
+    } 
+}

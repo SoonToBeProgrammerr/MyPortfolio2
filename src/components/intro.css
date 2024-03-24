@@ -1,0 +1,332 @@
+.home-intro {
+    position: relative;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    height: auto;
+  
+}
+
+
+.title {
+    animation-name: moveRight;
+    animation-duration: 3.5s;
+    font-size: 40px;
+    font-weight: 400;
+    z-index: 4;
+}
+
+.titleTwo {
+    animation-name: moveLeft;
+    animation-duration: 4s;
+    font-size: 70px;
+    font-weight: 600;
+    color: yellow;
+    z-index: 4;
+}
+
+
+
+.titleThree {
+    animation-name: moveRight;
+    animation-duration: 4.5s;
+    margin-bottom: 10px;
+    font-size: 80px;
+    z-index: 4;
+}
+
+.text {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    z-index: 4;
+}
+
+.button {
+
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    position: relative;
+    transform: translateZ(0);
+    animation-name: moveUp;
+    animation-duration: 4s;
+    cursor: pointer;
+    margin: 0 2rem;
+    z-index: 2;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: yellow;
+    transform: scaleX(0);
+    transition: 300ms ease-out;
+
+}
+
+.button:hover {
+    color: goldenrod;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+
+}
+
+
+
+.mypic {
+    position: absolute;
+    right: 5em;
+    z-index: -1;
+    height: 18vw;
+    width: 30vw;
+    object-fit: cover;
+    animation-duration: 3s;
+    animation-name: moveUp;
+   
+    
+}
+
+.moving {
+    animation: animateUser 4s linear infinite;
+}
+
+
+@media only screen and (min-width: 2560px) {
+    .mypic {
+        position: absolute;
+        right: 5rem;
+        height: 20vw;
+        width: 12vw;
+        object-fit: cover;
+        animation-duration: 3s;
+        animation-name: moveUp;
+    }
+}
+
+@media only screen and (max-width: 1900px) {
+    .mypic {
+        position: absolute;
+        right: 0rem;
+        height: 35vw;
+        width: 20vw;
+        object-fit: cover;
+        animation-duration: 3s;
+        animation-name: moveUp;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) {
+
+    .mypic {
+        position: absolute;
+        right: 0rem;
+        height: 45vw;
+        width: 26vw;
+        object-fit: cover;
+        animation-duration: 3s;
+        animation-name: moveUp;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .mypic {
+        position: absolute;
+        right: 0rem;
+        height: 45vw;
+        width: 26vw;
+        object-fit: cover;
+        animation-duration: 3s;
+        animation-name: moveUp;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .mypic {
+        position: absolute;
+        right: 0rem;
+        height: 30rem;
+        width: 17rem;
+        object-fit: cover;
+        animation-duration: 3s;
+        animation-name: moveUp;
+    }
+}
+
+
+@media only screen and (max-width: 685px) {
+
+    .home-intro {
+        position: relative;
+        margin: 4rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: white;
+        height: auto;
+      
+    }
+
+    .mypic {
+        position: absolute;
+        right: 0rem;
+        height: 30rem;
+        width: 17rem;
+        object-fit: cover;
+        animation-duration: 3s;
+        animation-name: moveUp;
+    }
+
+    .title {
+       
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .titleTwo {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    
+    .titleThree {
+        margin-bottom: 10px;
+        font-size: 50px;
+    }
+    
+    .text {
+        font-size: 30px;  
+        margin-bottom: 20px;
+    }
+    
+    .button {
+        font-size: 20px;
+        padding: 10px 25px;
+        margin: 1rem 2rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes transition {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+
+
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+
+@keyframes animateUser {
+    0% {
+        top: 0px;
+        bottom: 0px
+    }
+
+    25% {
+        top: 5px;
+        bottom: 0px
+    }
+
+    50% {
+        top: 0px;
+        bottom: 5px
+    }
+
+    75% {
+        top: 5px;
+        bottom: 0px
+    }
+
+    100% {
+        top: 0px;
+        bottom: 5px
+    }
+
+}
